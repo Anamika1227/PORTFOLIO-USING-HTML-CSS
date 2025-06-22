@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anamika | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        background-color: #0d0d0d;
+      color: #e0f7fa;
+    }
+header.hero{
+ display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      text-align: center;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+     background-color: #0d0d0d;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+}
+.logo{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color:#00f2fe;
+    text-shadow: 0px 0px 10px #00f2fe;
+   
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap :20px;
+
+}
+.nav-links a{
+    text-decoration: none;
+    color:#e0f7fa;
+font-weight: 600;
+    transition:color 0.3s;
+}
+.nav-links a:hover{
+    color:#00f2fe;
+    text-shadow: 0px 0px 10px#00f2fe;
+}
+.hero-content img{
+    margin-top: 30px;
+border-radius: 50%;
+width: 150px;
+height: 150px;
+object-fit: cover;
+box-shadow: 0px 0px 30px#00f2fe;
+height: 200px;
+width:200px;
+margin-bottom: 20px;}
+
+ .hero-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    .highlight {
+      color: #00f2fe;
+      text-shadow: 0 0 10px #00f2fe;
+    }
+    .hi:hover{
+    color:#e494e8;
+    text-shadow: 0px 0px 10px#e670ec;
+}
+.btn{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid #00f2fe;
+    border-radius: 30%;
+    text-decoration: none;
+    transition : all 0.3s ease;
+
+}
+.btn:hover{
+     background-color: #00f2fe;
+      color: #0d0d0d;
+      box-shadow: 0 0 20px #00f2fe;
+}
+
+.section{
+    padding :4rem 2rem;
+}
+.section-title{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color:#00f2fe;
+    text-shadow: 0px 0px 10px #00f2fe;
+}
+.container{
+    max-width: 960px;
+    margin:0 auto;
+}
+.skills-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1rem;
+}
+.skills-grid span{
+    background-color: rgba(0,242,254,0.1);
+    border: 1px solid #00f2fe;
+    border-radius: 25%;
+    color:#00f2fe;
+    padding:0.5rem 1rem;
+    font-size: 1rem;
+    box-shadow: 0px 0px 10px rgba(0,242,252,0.2);
+
+}
+.skills-grid span:hover{
+    background-color: #00f2fe;
+      color: #0d0d0d;
+      box-shadow: 0 0 20px #00f2fe;
+}
+.footer{
+    text-align: center;
+    padding: 2rem;
+    color:#666;
+    background-attachment: fixed;
+    background: #0a0a0a;
+
+}
+    </style>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <h1 class="logo">ANAMIKA</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills ">Skills</a></li>
+        <li><a href="#projects ">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <img src="./image/image1.jpeg" alt="Anamika's Photo">
+      <h2>Hi, I'm <span class="highlight">Anamika</span></h2>
+      <p>Aspiring Full Stack Developer |<span class="hi" >C, C++, Java, Python | HTML, CSS, JavaScript</span></p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>Hey! I’m Anamika — someone who genuinely enjoys building websites and bringing ideas to life on screen. I started learning web development out of curiosity, and it quickly turned into something I love. Right now, I’m focused on HTML, CSS, and JavaScript, and I’m slowly moving into full-stack development. I enjoy creating clean, simple designs that work well on all devices and actually feel nice to use.
+
+Apart from coding, I like exploring new design trends, learning from real-world projects, and improving a little every day. I believe good websites don’t just look pretty — they solve problems and make life easier. Whether it’s fixing a small bug or finishing a full project, I enjoy the whole process. I’m always open to learning something new and growing along the way.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <span>C</span><span>C++</span><span>Python</span><span>Java</span>
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>DOM</span>
+        <span>Flexbox</span><span>Grid</span><span>DBMS</span><span>CN</span>
+        <span>OOPs</span><span>DSA</span><span>Team Building</span><span>Leadership</span>
+        <span>Human Behavior</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p>(I WILL KEEP ON ADDING MAIN PROJECTS IN FUTURE.)</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p>Let's connect! You can reach me via email(anamikasindhu2006@gmail.com) or LinkedIn(ANAMIKA SINDHU).</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Anamika | Built  using HTML, CSS, JS</p>
+  </footer>
+</body>
+
+</html>
